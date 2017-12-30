@@ -101,7 +101,7 @@ void decifra(char *file_da_decifrare, char chiave, char *file_output){
     fprintf(ptr,"%c", bin_to_char(temp));
     j += 8;
   }
-  printf("decryption ended with success\nCreate file output %s\n", file_output);
+  printf("decryption ended with success\nCreated file output %s\n", file_output);
   if(fclose(f)){
     printf("Errore nella chiusura del file\n");
     exit(-2);
